@@ -1,0 +1,8 @@
+prefix=/home/smail/catkin_ws/install
+
+Name: publisher_subscriber
+Description: Description of publisher_subscriber
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/smail/catkin_ws/install/lib 
+Requires: 

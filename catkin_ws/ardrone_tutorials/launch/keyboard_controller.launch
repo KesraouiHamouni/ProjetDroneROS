@@ -1,0 +1,23 @@
+<launch>
+<!-- Lance le driver ardrone_autonomy -->
+<node name="ardrone_driver" pkg="ardrone_autonomy" type="ardrone_driver"
+output="screen" clear_params="true">
+<param name="outdoor" value="0" /> <!-- If we are flying outdoors,
+will select more aggressive default settings -->
+<param name="flight_without_shell" value="0" /> <!-- Changes internal
+controller gains if we are flying without the propeller guard -->
+<param name="altitude_max" value="3000" /> <!-- En millimètres = 3
+mètres = 9' -->
+<param name="altitude_min" value="50" /> <!-- En millimètres = 5cm =
+2" -->
+<param name="euler_angle_max" value="0.1" /> <!-- Angle maximum en
+radiant = 5 degrés -->
+<param name="control_vz_max" value="200" /> <!-- Vitesse maximale =
+0.2m/sec -->
+<param name="control_yaw" value="0.7" /> <!-- Vitesse maximale de
+rotation = 40 degrés par secondes (1/9 tour/sec) -->
+</node>
+<!-- Lance le programme keyboard_controller -->
+<node name="keyboard_controller" pkg="ardrone_flip"
+type="keyboard_controller.py" required="true"/>
+</launch>

@@ -1,0 +1,10 @@
+/home/smail/catkin_ws/install/_setup_util.py
+/home/smail/catkin_ws/install/env.sh
+/home/smail/catkin_ws/install/setup.bash
+/home/smail/catkin_ws/install/setup.sh
+/home/smail/catkin_ws/install/setup.zsh
+/home/smail/catkin_ws/install/.rosinstall
+/home/smail/catkin_ws/install/lib/pkgconfig/beginner_tutorials.pc
+/home/smail/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorialsConfig.cmake
+/home/smail/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorialsConfig-version.cmake
+/home/smail/catkin_ws/install/share/beginner_tutorials/package.xml

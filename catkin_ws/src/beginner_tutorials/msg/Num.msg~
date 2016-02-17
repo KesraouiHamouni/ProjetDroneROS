@@ -1,0 +1,5 @@
+int64 num
+string first_name kesraoui
+string last_name smail
+uint8 age 24
+uint32 score 0
