@@ -1,11 +1,12 @@
 #include "ros/ros.h"
 #include "turtlesim/Color.h"
 #include "turtlesim/Pose.h"
+//simulation turtlsim
 void color_callback(const turtlesim::Color::ConstPtr& col)
 {
-ROS_INFO("red: %d, green: %d, blue: %d", col->r, col->g, col->b);
+ROS_INFO("red: %d, green: %d, blue: %d", col->r, col->g, col->b);// recupere les infos de la couleur 
 }
-void pose_callback(const turtlesim::Pose& msgIn){
+void pose_callback(const turtlesim::Pose& msgIn){  
 ROS_INFO_STREAM(std::setprecision(2) << std::fixed
 << "position=(" << msgIn.x << "," << msgIn.y << ")"
 << "direction=" << msgIn.theta);
@@ -20,4 +21,4 @@ ros::Subscriber subscriber_pose=node.subscribe("turtle1/pose", 1000, pose_callba
 ros::spin();
 return 0;
 }
-*
+
